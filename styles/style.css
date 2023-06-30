@@ -1,0 +1,37 @@
+@import url('./header.css');
+@import url('./container.css');
+@import url('./container_final.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --font:'Inter', sans-serif;
+    --laranja:hsl(35, 77%, 62%);
+    --laranja-escuro:hsl(5, 85%, 63%);
+    --branco:hsl(36, 100%, 99%);
+    --cinza-claro:hsl(233, 8%, 79%);
+    --cinza:hsl(236, 13%, 42%);
+    --azul-escuro:hsl(240, 100%, 5%);
+
+}
+
+body{
+    background-color: var(--branco);
+    font-family: var(--font);
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:450px) {
+    body{
+        width: 100%;
+        padding: 1rem;
+    }
+}

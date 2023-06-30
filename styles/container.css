@@ -1,0 +1,119 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 0 auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    flex-shrink: 1;
+    
+    
+}
+.container img{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    max-width: 100%;
+}
+
+.container h1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 4rem;
+    font-weight: 800;
+    max-width: 100%;
+    padding: 0 3rem;
+    
+}
+
+.container .container__botao{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0 1rem;
+}
+
+.container__botao button{
+    width: 45%;
+    border: none;
+    background-color: var(--laranja-escuro);
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: var(--branco);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container__botao button:hover{
+    background-color: var(--azul-escuro);
+    transition: 600ms;
+    
+}
+
+.container__botao p{
+    color: var(--azul-escuro);
+    text-align: left;
+    padding-right: 4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.container .container__direito{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    max-width: 100%;
+}
+
+.container__direito{
+    margin-left: 2rem;
+    background-color: var(--azul-escuro);
+    padding: 2rem 3rem;
+}
+
+.container__direito h2{
+    font-size: 2.8rem;
+    color: var(--laranja);
+    margin-bottom: 1.5rem;
+}
+
+.container__direito h3{
+    color: var(--branco);
+    margin-bottom: 0.8rem;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.container__direito h3:hover{
+    color: var(--laranja);
+}
+
+.container__direito p{
+    color: var(--cinza-claro);
+    padding-bottom: 3rem;
+    
+    
+}
+
+.container__direito div:nth-child(2),
+.container__direito div:nth-child(3)
+{
+    border-bottom: 0.6px solid var(--cinza-claro);
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__direito{
+        margin-left: 0;
+        padding: 1rem 2rem;
+    }
+
+}
