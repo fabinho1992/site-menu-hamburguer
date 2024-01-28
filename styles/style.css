@@ -13,10 +13,10 @@
 :root{
     --font:'Inter', sans-serif;
     --laranja:hsl(35, 77%, 62%);
-    --laranja-escuro:hsl(5, 85%, 63%);
+    --laranja-escuro:hsl(233, 21%, 39%);
     --branco:hsl(36, 100%, 99%);
     --cinza-claro:hsl(233, 8%, 79%);
-    --cinza:hsl(236, 13%, 42%);
+    --cinza:hsl(240, 67%, 1%);
     --azul-escuro:hsl(240, 100%, 5%);
 
 }
